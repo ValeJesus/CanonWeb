@@ -1,5 +1,5 @@
 # Documentação CanonWeb
-(O projeto é basicamente a tradução de um site feito no framer de um grupo de TCC de design, nada aqui é de autoria minha a não ser o código, todo visual, ideias, branding é de autoria do grupo de tcc canon da etec carlos de campos 2026.)
+##### (O projeto é basicamente a tradução de um site feito no framer de um grupo de TCC de design, nada aqui é de autoria minha a não ser o código, todo visual, ideias, branding é de autoria do grupo de tcc canon da etec carlos de campos 2026.)
 
 Projeto de uma página web para visualização de arquivos PDF, desenvolvido a partir de um protótipo criado no Framer e posteriormente adaptado para tecnologias web.
 
@@ -61,4 +61,4 @@ Em desenvolvimento.
 
 --- 
 
-(O projeto é basicamente a tradução de um site feito no framer de um grupo de TCC de design, nada aqui é de autoria minha a não ser o código, todo visual, ideias, branding é de autoria do grupo de tcc canon da etec carlos de campos 2026.)
+##### (O projeto é basicamente a tradução de um site feito no framer de um grupo de TCC de design, nada aqui é de autoria minha a não ser o código, todo visual, ideias, branding é de autoria do grupo de tcc canon da etec carlos de campos 2026.)
