@@ -50,6 +50,10 @@ https://usuario.github.io/nome-do-projeto/
 Como o projeto utiliza HTML, CSS e JavaScript no lado do cliente, o GitHub Pages é suficiente para hospedar a página estática.
 
 A parte desenvolvida em Python será utilizada localmente ou em um ambiente apropriado caso seja necessário executar código no servidor.
+
+## Visualização
+[Visualizar protótipo no Framer](https://coral-weather-189321.framer.app/)
+
 ## Status
 
 Em desenvolvimento.
