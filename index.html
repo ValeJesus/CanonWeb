@@ -1,328 +1,345 @@
-<!---->
 <!doctype html>
 <html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Canon</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Canon | Um novo olhar</title>
+    <meta name="description" content="Canon - projeto editorial conceitual. Precisão japonesa. Imaginação sem fronteiras." />
+    <link rel="stylesheet" href="style.css" />
   </head>
-  <!---->
   <body>
-    <!--Barra de cima-->
-    <div class="container">
-      <div class="barrasuperior">
-        <div class="imgbarra">
-          <img src="img's/CanonLogo.avif" class="logocanon" />
-        </div>
-        <nav>
+    <!-- Barra superior -->
+    <header class="topbar">
+      <div class="topbar__inner">
+        <a href="#Inicio" class="topbar__logo" aria-label="Canon — início">
+          <img src="img's/CanonLogo.avif" alt="Canon" />
+        </a>
+        <nav class="topbar__nav" aria-label="Principal">
           <a href="#Inicio">Início</a>
-          <a href="#Produtos">Produto</a>
+          <a href="#Produtos">Produtos</a>
           <a href="#Comercial">Comercial</a>
-          <a href="#Identidade">Identidade</a>
-          <a href="#Sussumu">Sussumu</a>
-          <a href="#Historia">Historia</a>
+          <a href="#Identidade">Identidade Visual</a>
+          
+          <a href="#Susumu">Susumu</a>
+           <a href="#Historia">História</a>
         </nav>
       </div>
-    </div>
+    </header>
 
-    <!--Coloca a cor vermelho no hr no css dps-->
-    <hr>
+    <main>
+      <!-- Início -->
+      <section id="Inicio" class="hero">
+        <p class="eyebrow">CANON / CULTURA DA IMAGEM / JAPÃO, 1937</p>
+        <h1 class="hero__title">O mundo muda.<br />O olhar transforma.</h1>
 
-    <!--Seção do inicio-->
-    <section id="Inicio">
-      <div class="Inicio">
-        <p class="Endereço">CANON / CULTURA DA IMAGEM / JAPÃO, 1937</p>
-        <br>
-        <h1 class="Titulo">O mundo muda. O <br />olhar transforma.</h1>
+        <figure class="hero__media">
+          <img src="img's/ImgInicio.jpeg" alt="Lente de câmera Canon em close" />
+        </figure>
 
-        <div class="img">
-          <img src="img's/ImgInicio.jpeg" />
-        </div>
-        <div class="InfoInicio">
-          <h1>Precisão japonesa. Imaginação sem fronteiras.</h1>
+        <div class="hero__info">
+          <h2>Precisão japonesa. Imaginação sem fronteiras.</h2>
           <p>
             Da primeira ideia ao próximo enquadramento. A Canon aproxima
             pessoas, histórias e possibilidades por meio da imagem. Um encontro
             entre tecnologia e sensibilidade.
           </p>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section id="Produtos">
-      
-      <div class="Produtos">
-        <p>01 / FERRAMENTAS PARA IMAGINAR</p>
-        <h1>Para cada olhar, uma possibilidade.</h1>
-      <div class="products">
-        <div class="possibilidades">
-          <div class="produtos">
-            <p>Cameras</p>
-            <img src="img's/SistemaEos.avif" />
-            <h4>Sistema EOS</h4>
-            <p>Fotografia para novos pontos de vista.</p>
-            <p>CATÁLOGO /</p>
+      <!-- Produtos -->
+      <section id="Produtos" class="products-band">
+        <div class="products-band__inner">
+          <p class="eyebrow eyebrow--light">01 / FERRAMENTAS PARA IMAGINAR</p>
+          <h2 class="section-title">Para cada olhar, uma possibilidade.</h2>
+
+          <div class="products">
+            <article class="product-card">
+              <p class="product-card__cat">Câmeras</p>
+              <img src="img's/SistemaEos.avif" alt="Câmera Canon EOS" />
+              <h3>Sistema EOS</h3>
+              <p class="product-card__desc">Fotografia para novos pontos de vista.</p>
+              <a href="#" class="product-card__link">CATÁLOGO /</a>
+            </article>
+
+            <article class="product-card">
+              <p class="product-card__cat">Lentes</p>
+              <img src="img's/RF&EF.avif" alt="Objetivas RF e EF" />
+              <h3>Objetivas RF e EF</h3>
+              <p class="product-card__desc">Distâncias, detalhes e novas perspectivas.</p>
+              <a href="#" class="product-card__link">CATÁLOGO /</a>
+            </article>
+
+            <article class="product-card">
+              <p class="product-card__cat">Impressoras</p>
+              <img src="img's/Pixma.avif" alt="Impressora Canon PIXMA" />
+              <h3>Linha PIXMA</h3>
+              <p class="product-card__desc">Da imagem digital ao papel.</p>
+              <a href="#" class="product-card__link">CATÁLOGO /</a>
+            </article>
+
+            <article class="product-card">
+              <p class="product-card__cat">Equipamentos de vídeo</p>
+              <img src="img's/CinemaEOs.avif" alt="Câmera Cinema EOS" />
+              <h3>Cinema EOS</h3>
+              <p class="product-card__desc">Histórias que ganham movimento.</p>
+              <a href="#" class="product-card__link">CATÁLOGO /</a>
+            </article>
+
+            <article class="product-card">
+              <p class="product-card__cat">Acessórios</p>
+              <img src="img's/CSS.avif" alt="Acessórios Canon" />
+              <h3>Complete seu sistema</h3>
+              <p class="product-card__desc">Recursos para acompanhar sua criação.</p>
+              <a href="#" class="product-card__link">CATÁLOGO /</a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Comercial -->
+      <section id="Comercial" class="commercial">
+        <p class="eyebrow">02 / EM MOVIMENTO</p>
+        <h2 class="section-title">Toda imagem tem uma história.</h2>
+
+        <div class="commercial__stage">
+          <img src="img's/ImgInicio.jpeg" alt="" aria-hidden="true" />
+          <div class="commercial__overlay">
+            <p class="commercial__tag commercial__tag--top">COMERCIAL CANON / ESPAÇO PARA VÍDEO</p>
+            <div class="commercial__play" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="28" height="28"><path d="M8 5v14l11-7z" fill="currentColor" /></svg>
+            </div>
+            <div class="commercial__bottom">
+              <p class="commercial__tag">CANON / MOTION PICTURE</p>
+              <p class="commercial__tag">UM NOVO OLHAR · FILME DA MARCA</p>
+            </div>
           </div>
         </div>
 
-        <div class="possibilidades">
-          <div class="produtos">
-            <p>Lentes</p>
-            <img src="img's/RF&EF.avif" />
-            <h4>Objetivas RF e EF</h4>
-            <p>Distâncias, detalhes e novas perspectivas.</p>
-            <p>CATÁLOGO /</p>
-          </div>
-        </div>
-
-        <div class="possibilidades">
-          <div class="produtos">
-            <p>Impressoras</p>
-            <img src="img's/Pixma.avif" />
-            <h4>Linha PIXMA</h4>
-            <p>Da imagem digital ao papel.</p>
-            <p>CATÁLOGO /</p>
-          </div>
-        </div>
-
-        <div class="possibilidades">
-          <div class="produtos">
-            <p>Equipamentos de vídeo</p>
-            <img src="img's/CinemaEOs.avif" />
-            <h4>Cinema EOS</h4>
-            <p>Histórias que ganham movimento.</p>
-            <p>CATÁLOGO /</p>
-          </div>
-        </div>
-
-        <div class="possibilidades">
-          <div class="produtos">
-            <p>Acessórios</p>
-            <img src="img's/CSS.avif" />
-            <h4>Complete seu sistema</h4>
-            <p>Recursos para acompanhar sua criação.</p>
-            <p>CATÁLOGO /</p>
-          </div>
-        </div>
-      </div>
-      </div>
-    </section>
-
-    <section id="Comercial">
-      <div class="comercial">
-        <p>02 / EM MOVIMENTO</p>
-        <img src="img's/ImgInicio.avif" />
-        <p>
+        <p class="commercial__note">
           Uma tela aberta para a próxima campanha. Vídeo e material audiovisual
           serão adicionados aqui.
         </p>
-      </div>
-    </section>
+      </section>
 
-    <section id="Identidade">
-      <div class="Identidadesub">
-        <p>03 / BIBLIOTECA DA MARCA</p>
-        <h1>Manual de Identidade Visual</h1>
-        <div class="Arquivos">
-          <div class="SubArquivos">
-            <p>PDF / ARQUIVO DA MARCA</p>
+      <!-- Biblioteca da marca / Identidade visual -->
+      <section id="Identidade" class="library">
+        <p class="eyebrow3">03 / BIBLIOTECA DA MARCA</p>
+        <h2 class="section-title3">Manual de Identidade Visual</h2>
+        <p class="library__intro">
+          Um arquivo vivo da marca: logotipo, cores, tipografia e aplicações
+          reunidos em um só lugar. Os PDFs serão adicionados aqui.
+        </p>
+
+        <div class="docs">
+          <article class="doc-card">
+            <p class="doc-card__tag">PDF / ARQUIVO DA MARCA</p>
             <h3>Logotipo</h3>
-            <p>Versões, proporções e proteção.</p>
-            <button type="button" class="pdf-button" data-pdf="./arquivos/logotipo.pdf" data-title="Logotipo">Visualiza PDF</button>
-          </div>
+            <p>Versões, proporções e proteção.<span class="doc-card__note">PDF a ser adicionado</span></p>
+            <button type="button" class="pdf-button" data-pdf="./arquivos/logotipo.pdf" data-title="Logotipo">Visualizar PDF</button>
+          </article>
 
-          <div class="SubArquivos">
-            <p>PDF / ARQUIVO DA MARCA</p>
+          <article class="doc-card">
+            <p class="doc-card__tag">PDF / ARQUIVO DA MARCA</p>
             <h3>Paleta de cores</h3>
-            <p>Cores e combinações da marca.</p>
-            <button type="button" class="pdf-button" data-pdf="./arquivos/paleta-de-cores.pdf" data-title="Paleta de cores">Visualiza PDF</button>
-          </div>
+            <p>Cores e combinações da marca. <span class="doc-card__note">PDF a ser adicionado</span></p>
+            <button type="button" class="pdf-button" data-pdf="./arquivos/paleta-de-cores.pdf" data-title="Paleta de cores">Visualizar PDF</button>
+          </article>
 
-          <div class="SubArquivos">
-            <p>PDF / ARQUIVO DA MARCA</p>
+          <article class="doc-card">
+            <p class="doc-card__tag">PDF / ARQUIVO DA MARCA</p>
             <h3>Tipografia</h3>
-            <p>Hierarquia e uso tipográfico.</p>
-            <button type="button" class="pdf-button" data-pdf="./arquivos/tipografia.pdf" data-title="Tipografia">Visualiza PDF</button>
-          </div>
+            <p>Hierarquia e uso tipográfico. <span class="doc-card__note">PDF a ser adicionado</span></p>
+            <button type="button" class="pdf-button" data-pdf="./arquivos/tipografia.pdf" data-title="Tipografia">Visualizar PDF</button>
+          </article>
 
-          <div class="SubArquivos">
-            <p>PDF / ARQUIVO DA MARCA</p>
+          <article class="doc-card">
+            <p class="doc-card__tag">PDF / ARQUIVO DA MARCA</p>
             <h3>Elementos gráficos</h3>
-            <p>Formas, padrões e composições.</p>
-            <button type="button" class="pdf-button" data-pdf="./arquivos/elementos-graficos.pdf" data-title="Elementos gráficos">Visualiza PDF</button>
-          </div>
+            <p>Formas, padrões e composições. <span class="doc-card__note">PDF a ser adicionado</span></p>
+            <button type="button" class="pdf-button" data-pdf="./arquivos/elementos-graficos.pdf" data-title="Elementos gráficos">Visualizar PDF</button>
+          </article>
 
-          <div class="SubArquivos">
-            <p>PDF / ARQUIVO DA MARCA</p>
+          <article class="doc-card">
+            <p class="doc-card__tag">PDF / ARQUIVO DA MARCA</p>
             <h3>Aplicações da marca</h3>
-            <p>Exemplos em diferentes suportes.</p>
-            <button type="button" class="pdf-button" data-pdf="./arquivos/aplicacoes-da-marca.pdf" data-title="Aplicações da marca">Visualiza PDF</button>
-          </div>
+            <p>Exemplos em diferentes suportes. <span class="doc-card__note">PDF a ser adicionado</span></p>
+            <button type="button" class="pdf-button" data-pdf="./arquivos/aplicacoes-da-marca.pdf" data-title="Aplicações da marca">Visualizar PDF</button>
+           
+          </article>
 
-          <div class="SubArquivos">
-            <p>PDF / ARQUIVO DA MARCA</p>
+          <article class="doc-card">
+            <p class="doc-card__tag">PDF / ARQUIVO DA MARCA</p>
             <h3>Diretrizes visuais</h3>
-            <p>Fotografia e linguagem visual.</p>
-            <button type="button" class="pdf-button" data-pdf="./arquivos/diretrizes-visuais.pdf" data-title="Diretrizes visuais">Visualiza PDF</button>
-          </div>
+            <p>Fotografia e linguagem visual. <span class="doc-card__note">PDF a ser adicionado</span></p>
+            <button type="button" class="pdf-button" data-pdf="./arquivos/diretrizes-visuais.pdf" data-title="Diretrizes visuais">Visualizar PDF</button>
+            
+          </article>
 
-          <div class="SubArquivos">
-            <p>PDF / ARQUIVO DA MARCA</p>
+          <article class="doc-card">
+            <p class="doc-card__tag">PDF / ARQUIVO DA MARCA</p>
             <h3>Materiais institucionais</h3>
-            <p>Documentos e apresentações.</p>
-            <button type="button" class="pdf-button" data-pdf="./arquivos/materiais-institucionais.pdf" data-title="Materiais institucionais">Visualiza PDF</button>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!--Deixar por ultimo pq vai ser bala posicionar as img's-->
-    <section id="Sussumu">
-      <div class="Sussumu">
-        <div>
-          <img src="img's/Susumu1.avif" class="sussumu1" />
-          <img src="img's/Susumu2.avif" class="sussumu2" />
-          <img src="img's/Susumu3.avif" class="sussumu3" />
-          <img src="img's/Susumu4.avif" class="sussumu4" />
-          <img src="img's/Susumu5.avif" class="sussumu5" />
-          <img src="img's/Susumu6.avif" class="sussumu6" />
-
-          <p>04 / UM OUTRO JEITO DE VER</p>
-          <h1>Olá, Susumu.</h1>
-          <p>
-            Um espaço para a personagem que dá vida a este universo criativo.
-            Aqui, fotografia e imaginação ganham um lado mais leve, próximo e
-            divertido.
-            <br />
-            HISTÓRIA E PERSONALIDADE
-            <br />
-            O processo de criação da Susumu começou a partir da busca por um
-            mascote que transmitisse personalidade, simpatia e identidade
-            visual. A proposta foi unir características delicadas e marcantes,
-            criando um contraste entre sua aparência fofa e seus elementos
-            inspirados em criaturas do folclore japonês.
-            <br />
-            Foram exploradas diferentes formas, expressões e proporções até
-            chegar ao visual atual. A estética foi construída com orelhas
-            semelhantes às de uma criatura fantástica, cauda, olhos expressivos
-            e vestimenta inspirada no quimono, reforçando sua personalidade
-            jovem e carismática.
-            <br />
-            A escolha das cores em tons de vermelho, rosa, preto e branco busca
-            criar destaque e facilitar a identiﬁcação da personagem. O resultado
-            é uma mascote que combina elementos tradicionais e contemporâneos,
-            tornando a Susumu visualmente marcante e adequada para representar a
-            marca.
-            <br />
-            Susumu é uma personagem curiosa, carismática e determinada. Apesar
-            de sua aparência delicada, possui uma personalidade forte e
-            independente. É divertida e brincalhona, gosta de explorar coisas
-            novas e está sempre disposta a aprender. Também é observadora e
-            protetora com aqueles de quem gosta, demonstrando um lado sensível
-            por trás de seu jeito conﬁante.
-            <br />
-            Aplicações / Produtos / Arquivos / Galeria gráfica
-          </p>
+            <p>Documentos e apresentações. <span class="doc-card__note">PDF a ser adicionado</span></p>
+            <button type="button" class="pdf-button" data-pdf="./arquivos/materiais-institucionais.pdf" data-title="Materiais institucionais">Visualizar PDF</button>
+            
+          </article>
         </div>
 
-        <div class="Brindes">
-          <h1>BRINDES</h1>
+        
+      </section>
 
-          <div class="subBrindes">
-            <p>BOTOM</p>
-            <img src="img's/Brinde1.avif" class="Brindeimg" />
-            <button type="Button">Adquira aqui</button>
+      <!-- Susumu -->
+      <section id="Susumu" class="susumu">
+        <div class="susumu__intro">
+          <div class="susumu__art" role="group" aria-label="Ilustrações da personagem Susumu">
+            <img class="susumu__art-image susumu__art-image--one" src="img's/Susumu1.avif" alt="" />
+            <img class="susumu__art-image susumu__art-image--two" src="img's/Susumu2.avif" alt="" />
+            <img class="susumu__art-image susumu__art-image--three" src="img's/Susumu3.avif" alt="" />
+            <img class="susumu__art-image susumu__art-image--main" src="img's/Susumu4.avif" alt="Susumu vestida de quimono" />
+            <img class="susumu__art-image susumu__art-image--five" src="img's/Susumu5.avif" alt="" />
+            <img class="susumu__art-image susumu__art-image--six" src="img's/Susumu6.avif" alt="" />
           </div>
-
-          <div class="subBrindes">
-            <p>CAMISETA SUSUMU</p>
-            <img src="img's/Brinde2.avif" class="Brindeimg" />
-            <button type="Button">Adquira aqui</button>
-          </div>
-
-          <div class="subBrindes">
-            <p>CAMISETA KANNON</p>
-            <img src="img's/Brinde3.avif" class="Brindeimg" />
-            <button type="Button">Adquira aqui</button>
-          </div>
-
-          <div class="subBrindes">
-            <p>CANECA</p>
-            <img src="img's/Brinde4.avif" class="Brindeimg" />
-            <button type="Button">Adquira aqui</button>
-          </div>
-
-          <div class="subBrindes">
-            <p>CANETA</p>
-            <img src="img's/Brinde5.avif" class="Brindeimg" />
-            <button type="Button">Adquira aqui</button>
-          </div>
-
-          <div class="subBrindes">
-            <p>CHAVEIRO</p>
-            <img src="img's/Brinde6.avif" class="Brindeimg" />
-            <button type="Button">Adquira aqui</button>
+          <div class="susumu__copy">
+            <p class="eyebrow">04 / UM OUTRO JEITO DE VER</p>
+            <h2 class="susumu__title">Olá, Susumu.</h2>
+            <p class="susumu__lead">
+              Um espaço para a personagem que dá vida a este universo criativo.
+              Aqui, fotografia e imaginação ganham um lado mais leve, próximo e
+              divertido.
+            </p>
+            <div class="susumu__texts">
+              <div>
+                <h3>História e personalidade</h3>
+                <p>
+                  O processo de criação da Susumu buscou unir simpatia e
+                  identidade visual, combinando uma aparência delicada com
+                  elementos inspirados em criaturas do folclore japonês.
+                </p>
+              </div>
+              <div>
+                <h3>Design e inspiração</h3>
+                <p>
+                  Orelhas fantásticas, cauda, olhos expressivos e vestimenta
+                  inspirada no quimono reforçam sua personalidade jovem. A
+                  paleta de vermelho, rosa, preto e branco combina elementos
+                  tradicionais e contemporâneos para representar a marca.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
 
-    <section id="Historia">
-      <div class="Historia">
-        <p>05 / DO JAPÃO PARA O MUNDO</p>
-        <h1>O futuro começa com curiosidade.</h1>
-
-        <!--Colocar um contorno em cima dos anos-->
-        <div class="Anos">
-          <h1>1933</h1>
-          <p>
-            A origem. Um laboratório de instrumentos ópticos é fundado em
-            Tóquio.
-          </p>
+        <!-- Aplicações -->
+        <div class="tabpanel is-active" data-panel="aplicacoes" role="tabpanel">
+          <h3 class="tabpanel__title">BRINDES</h3>
+          <div class="shop">
+            <article class="shop-card">
+              <img src="img's/Brinde1.avif" alt="Botom Susumu" />
+              <p>BOTOM</p>
+              <button type="button">Adquira aqui</button>
+            </article>
+            <article class="shop-card">
+              <img src="img's/Brinde2.avif" alt="Camiseta Susumu" />
+              <p>CAMISETA SUSUMU</p>
+              <button type="button">Adquira aqui</button>
+            </article>
+            <article class="shop-card">
+              <img src="img's/Brinde3.avif" alt="Camiseta Kannon" />
+              <p>CAMISETA KANNON</p>
+              <button type="button">Adquira aqui</button>
+            </article>
+            <article class="shop-card">
+              <img src="img's/Brinde4.avif" alt="Caneca" />
+              <p>CANECA</p>
+              <button type="button">Adquira aqui</button>
+            </article>
+            <article class="shop-card">
+              <img src="img's/Brinde5.avif" alt="Caneca" />
+              <p>CANECA</p>
+              <button type="button">Adquira aqui</button>
+            </article>
+            <article class="shop-card">
+              <img src="img's/Brinde6.avif" alt="Chaveiro" />
+              <p>CHAVEIRO</p>
+              <button type="button">Adquira aqui</button>
+            </article>
+          </div>
         </div>
 
-        <div class="Anos">
-          <h1>1937</h1>
-          <p>
-            Nasce a empresa. Fundação da Precision Optical Industry, antecessora
-            da Canon.
-          </p>
+        
+        <!-- Galeria gráfica -->
+        <div class="tabpanel" data-panel="galeria" role="tabpanel" hidden>
+          <div class="gallery">
+            <img src="img's/Susumu1.avif" alt="Susumu 1" />
+            <img src="img's/Susumu2.avif" alt="Susumu 2" />
+            <img src="img's/Susumu3.avif" alt="Susumu 3" />
+            <img src="img's/Susumu4.avif" alt="Susumu 4" />
+            <img src="img's/Susumu5.avif" alt="Susumu 5" />
+            <img src="img's/Susumu6.avif" alt="Susumu 6" />
+          </div>
         </div>
 
-        <div class="Anos">
-          <h1>1987</h1>
-          <p>A era EOS. O sistema EOS inaugura uma nova etapa na fotografia.</p>
+        <div class="susumu__texts">
+          <div>
+            <h3>Personalidade</h3>
+            <p>
+              Susumu é uma personagem curiosa, carismática e determinada. Apesar
+              de sua aparência delicada, possui uma personalidade forte e
+              independente. É divertida e brincalhona, gosta de explorar coisas
+              novas e está sempre disposta a aprender. Também é observadora e
+              protetora com aqueles de quem gosta, demonstrando um lado sensível
+              por trás de seu jeito confiante.
+            </p>
+          </div>
         </div>
+      </section>
 
-        <div class="Anos">
-          <h1>Hoje</h1>
-          <p>
-            Além da fotografia. Imagem, impressão e tecnologias para diferentes
-            áreas da sociedade.
-          </p>
-        </div>
-      </div>
-    </section>
+      <!-- História -->
+      <section id="Historia" class="history">
+        <p class="eyebrow">05 / DO JAPÃO PARA O MUNDO</p>
+        <h2 class="section-title">O futuro começa com curiosidade.</h2>
 
-    <section id="Ajuda">
-      <div class="ajuda">
-        <h1>Como podemos ajudar ?</h1>
-        <h2>
-          Encontre respostas, suporte e informaçãoes para o seu produto Canon.
-        </h2>
-        <!--Barra de pesquisa-->
-        <p>06 / IDENTIDADE E UNIVERSO</p>
-        <h1>Tecnologia com sensibilidade. Precisão com propósito.</h1>
-        <p>
+        <ol class="timeline">
+          <li>
+            <span class="timeline__year">1933</span>
+            <p><strong>A origem.</strong> Um laboratório de instrumentos ópticos é fundado em Tóquio.</p>
+          </li>
+          <li>
+            <span class="timeline__year">1937</span>
+            <p><strong>Nasce a empresa.</strong> Fundação da Precision Optical Industry, antecessora da Canon.</p>
+          </li>
+          <li>
+            <span class="timeline__year">1987</span>
+            <p><strong>A era EOS.</strong> O sistema EOS inaugura uma nova etapa na fotografia.</p>
+          </li>
+          <li>
+            <span class="timeline__year">Hoje</span>
+            <p><strong>Além da fotografia.</strong> Imagem, impressão e tecnologias para diferentes áreas da sociedade.</p>
+          </li>
+        </ol>
+      </section>
+
+      <section class="support-help" aria-labelledby="supportTitle">
+        <h2 id="supportTitle">Como podemos ajudar?</h2>
+        <p>Encontre respostas, suporte e informações para o seu produto Canon.</p>
+        <label class="support-search">
+          <span class="support-search__icon" aria-hidden="true"></span>
+          <input type="search" aria-label="Buscar suporte Canon" />
+        </label>
+      </section>
+
+      <!-- Identidade e universo -->
+      <section id="Universo" class="universe">
+        <p class="eyebrow">06 / IDENTIDADE E UNIVERSO</p>
+        <h2 class="section-title">Tecnologia com sensibilidade.<br />Precisão com propósito.</h2>
+        <p class="universe__text">
           Kyosei: viver e trabalhar juntos pelo bem comum. Uma filosofia que
           conecta inovação, responsabilidade e pessoas. Neste projeto editorial,
           o espaço negativo, os círculos ópticos e o contraste entre luz e
           sombra traduzem uma cultura do olhar.
         </p>
-        <!--Redes sociais-->
-      </div>
-    </section>
+        <img class="universe__logo" src="img's/redes.png" alt="Canon" />
+      </section>
+    </main>
 
     <div id="pdfModal" class="pdf-modal" aria-modal="true" role="dialog" aria-labelledby="pdfTitle">
       <div class="pdf-modal-content">
@@ -334,10 +351,11 @@
       </div>
     </div>
 
-    <footer>
+    <footer class="footer">
       <p>Canon / Um novo olhar</p>
       <p>PROJETO EDITORIAL CONCEITUAL · 2026</p>
     </footer>
+
     <script src="script.js"></script>
   </body>
 </html>
