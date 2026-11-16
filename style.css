@@ -1,25 +1,10 @@
-/* ============ Fontes (GT Walsheim Trial) ============
-   A versão Trial não traz acentos nem "/" (os glifos acentuados saem sem acento).
-   Por isso o unicode-range limita a GT Walsheim a letras sem acento e a Outfit
-   (Google Fonts, geométrica parecida) cobre acentos, "/" e "·". */
-@font-face { font-family: "GT Walsheim"; font-weight: 200; font-style: normal; font-display: swap;
-  unicode-range: U+0020-007E, U+2018-201D;
-  src: url("fontes/GT-Walsheim-Thin-Trial-BF651b7fc728c4c.otf") format("opentype"); }
-@font-face { font-family: "GT Walsheim"; font-weight: 300; font-style: normal; font-display: swap;
-  unicode-range: U+0020-007E, U+2018-201D;
-  src: url("fontes/GT-Walsheim-Light-Trial-BF651b7fc714941.otf") format("opentype"); }
-@font-face { font-family: "GT Walsheim"; font-weight: 400; font-style: normal; font-display: swap;
-  unicode-range: U+0020-007E, U+2018-201D;
-  src: url("fontes/GT-Walsheim-Regular-Trial-BF651b7fc71a47d.otf") format("opentype"); }
-@font-face { font-family: "GT Walsheim"; font-weight: 500; font-style: normal; font-display: swap;
-  unicode-range: U+0020-007E, U+2018-201D;
-  src: url("fontes/GT-Walsheim-Medium-Trial-BF651b7fc728fb3.otf") format("opentype"); }
-@font-face { font-family: "GT Walsheim"; font-weight: 700; font-style: normal; font-display: swap;
-  unicode-range: U+0020-007E, U+2018-201D;
-  src: url("fontes/GT-Walsheim-Bold-Trial-BF651b7fc737c57.otf") format("opentype"); }
-@font-face { font-family: "GT Walsheim"; font-weight: 900; font-style: normal; font-display: swap;
-  unicode-range: U+0020-007E, U+2018-201D;
-  src: url("fontes/GT-Walsheim-Black-Trial-BF651b7fc736a5b.otf") format("opentype"); }
+/* ============ Fontes (Clash Display) ============ */
+@font-face { font-family: "Clash Display"; font-weight: 200; font-style: normal; font-display: swap; src: url("fontes/ClashDisplay-Regular.otf") format("opentype"); }
+@font-face { font-family: "Clash Display"; font-weight: 300; font-style: normal; font-display: swap; src: url("fontes/ClashDisplay-Regular.otf") format("opentype"); }
+@font-face { font-family: "Clash Display"; font-weight: 400; font-style: normal; font-display: swap; src: url("fontes/ClashDisplay-Regular.otf") format("opentype"); }
+@font-face { font-family: "Clash Display"; font-weight: 500; font-style: normal; font-display: swap; src: url("fontes/ClashDisplay-Regular.otf") format("opentype"); }
+@font-face { font-family: "Clash Display"; font-weight: 600; font-style: normal; font-display: swap; src: url("fontes/ClashDisplay-Regular.otf") format("opentype"); }
+@font-face { font-family: "Clash Display"; font-weight: 700; font-style: normal; font-display: swap; src: url("fontes/ClashDisplay-Regular.otf") format("opentype"); }
 
 /* ============ Tokens ============ */
 :root {
@@ -42,7 +27,7 @@ body {
   margin: 0;
   background: var(--bg);
   color: var(--text);
-  font-family: "GT Walsheim", "Outfit", "Helvetica Neue", Arial, sans-serif;
+  font-family: "Clash Display", "Helvetica Neue", Arial, sans-serif;
   font-weight: 400;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
@@ -71,7 +56,7 @@ section {
 
 
 .section-title {
-  font-weight: 900;
+  font-weight: 600;
   font-size: clamp(2.2rem, 5vw, 4.6rem);
   line-height: 0.98;
   letter-spacing: -0.045em;
@@ -79,7 +64,7 @@ section {
   color:white
 }
 .section-title3{
-  font-weight: 900;
+  font-weight: 600;
   font-size: clamp(2.2rem, 5vw, 4.6rem);
   line-height: 0.98;
   letter-spacing: -0.045em;
@@ -142,7 +127,7 @@ section {
 /* ============ Hero ============ */
 .hero { padding-top: 72px; padding-bottom: 72px; }
 .hero__title {
-  font-weight: 900;
+  font-weight: 600;
   font-size: clamp(3.2rem, 9vw, 9rem);
   line-height: 0.9;
   letter-spacing: -0.055em;
@@ -330,150 +315,46 @@ section {
 
 
 /* ============ Susumu ============ */
-.susumu {
-  background-color: #db7173;
-  padding-top: 8px;
-  padding-bottom: 64px;
+.susumu { --maroon: #6f2a2e; background-color: #db7173; padding-top: 8px; padding-bottom: 72px; }
+.susumu__stage { position: relative; container-type: inline-size; }
+.susumu__intro { min-height: 90cqw; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: 5.5cqw; align-items: start; }
+.susumu__arch {
+  position: relative; width: 100%; aspect-ratio: 170 / 188; margin-top: 61%;
+  border: 1px solid var(--maroon); border-bottom: 0; border-radius: 999px 999px 0 0;
 }
-.susumu__intro {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 32px;
-  align-items: start;
-}
-.susumu__art {
-  position: relative;
-  min-width: 0;
-  height: clamp(400px, 48vw, 620px);
-}
-.susumu__art-image {
-  position: absolute;
-  width: 27%;
-  aspect-ratio: 1;
-  object-fit: contain;
-}
-.susumu__art-image--one { top: 0; left: 0; }
-.susumu__art-image--two { top: 7%; left: 35%; }
-.susumu__art-image--three { top: 0; right: 0; }
-.susumu__art-image--main {
-  top: 24%;
-  left: 5%;
-  width: 90%;
-  height: 51%;
-  aspect-ratio: auto;
-  border: 1px solid rgba(255, 255, 255, 0.65);
-  border-bottom: 0;
-  border-radius: 50% 50% 0 0;
-}
-.susumu__art-image--five { bottom: 0; left: 8%; }
-.susumu__art-image--six { right: 0; bottom: 0; }
-.susumu__copy { min-width: 0; padding-top: 24px; }
-.susumu__copy > .eyebrow {
-  font-size: 0.55rem;
-  margin-bottom: 10px;
-}
-.susumu__title {
-  font-weight: 900;
-  font-size: clamp(1.5rem, 3.4vw, 3.2rem);
-  line-height: 0.95;
-  letter-spacing: -0.06em;
-  margin-bottom: 12px;
-}
-.susumu__lead {
-  max-width: 52ch;
-  font-size: 0.9rem;
-  font-weight: 300;
-  color: var(--muted);
-  margin-bottom: 18px;
-}
-.susumu__texts {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 24px;
-  padding-top: 14px;
-  border-top: 1px solid var(--line);
-  margin-top: 32px;
-}
-.susumu__copy .susumu__texts {
-  grid-template-columns: 1fr;
-  gap: 8px;
-  padding-top: 8px;
-  margin-top: 0;
-}
-.susumu > .susumu__texts { grid-template-columns: 1fr; }
-.susumu__texts h3 {
-  font-size: 0.58rem;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  font-weight: 500;
-  color: var(--pink);
-  margin-bottom: 5px;
-}
-.susumu__texts p { color: var(--muted); font-size: 0.75rem; line-height: 1.4; font-weight: 300; }
-.susumu__texts p + p { margin-top: 8px; }
-.tabs {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  margin: 32px 0;
-}
-.tabs__btn {
-  background: transparent;
-  color: var(--muted);
-  border: 1px solid var(--line);
-  padding: 10px 20px;
-  border-radius: 999px;
-  font-size: 0.78rem;
-  font-weight: 500;
-  letter-spacing: 0.06em;
-  transition: all 0.2s ease;
-}
-.tabs__btn:hover { color: var(--text); border-color: var(--text); }
-.tabs__btn.is-active { background: var(--red); border-color: var(--red); color: #fff; }
+.susumu__arch img { position: absolute; width: 125%; left: -12.5%; bottom: -19%; max-width: none; aspect-ratio: 1; }
+.susumu__copy { padding-top: 9.6cqw; color: var(--maroon); font-size: clamp(0.72rem, 1.3cqw, 1.15rem); line-height: 1.7; }
+.susumu__copy > .eyebrow { color: var(--maroon); font-size: clamp(0.5rem, 0.8cqw, 0.72rem); margin-bottom: 1.4cqw; }
+.susumu__title { color: var(--text); font-weight: 600; font-size: clamp(1.6rem, 6.2cqw, 5rem); line-height: 1; letter-spacing: -0.045em; margin-bottom: 2.2cqw; }
+.susumu__lead { max-width: 52ch; margin-bottom: 2.6cqw; color:white; }
+.susumu__sub { color:white; font-size: 0.78em; letter-spacing: 0.1em; text-transform: uppercase; font-weight: 600; margin-bottom: 1.2em; }
+.susumu__copy p + p { margin-top: 1.5em;  color:white;}
+.susumu__copy p:nth-of-type(3), .susumu__copy p:nth-of-type(4) { text-indent: 0.6em; color:white;}
+.susumu__links { color: var(--text); font-size: 0.8em; text-decoration: underline; text-underline-offset: 3px; margin-top: 2.2em !important; }
+
+/* stickers: rotação (--r) e posição em cqw, medidos na referência */
+.sticker { position: absolute; height: auto; aspect-ratio: 1; object-fit: contain; transform: rotate(var(--r, 0deg)); pointer-events: none; }
+.sticker--one  { --r: -8deg;  left: -9.2cqw; top: -5.3cqw; width: 38.7cqw; }
+.sticker--two  { --r: 22deg;  left: 18.9cqw; top: 0.4cqw;  width: 37.7cqw; }
+.sticker--five { --r: -20deg; left: -5cqw;   top: 81cqw;   width: 52cqw; }
+.sticker--six  { --r: 30deg; left: 56.9cqw; top: 86.7cqw; width: 50.7cqw; }
+.sticker--tree { --r: 22deg;  left: 73.9cqw; top: 0.1cqw;  width: 32.7cqw; }
+.susumu .tabpanel { margin-top: 23.7cqw; }
+.susumu .tabpanel__title { color: var(--text); font-weight: 500; text-transform: uppercase; font-size: clamp(2rem, 8.6cqw, 7rem); line-height: 1; letter-spacing: -0.02em; margin-bottom: 4cqw; }
+.susumu .shop { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 6cqw; }
+.susumu .shop-card { gap: 1.4cqw; padding: clamp(10px, 2.2cqw, 28px); border: 1px solid rgba(245, 239, 231, 0.9); background: transparent; }
+.susumu .shop-card p { color: var(--text); font-size: clamp(1.5rem, 1cqw, 0.85rem); letter-spacing: 0.06em; }
+.susumu .shop-card img { aspect-ratio: 8 / 7; object-fit: cover; background: transparent; padding: 0; }
+.susumu .shop-card button { align-self: center; width: 82%; margin-top: 0.8cqw; padding: 0.7cqw 0; background: transparent; color: var(--text); border: 1px solid rgba(245, 239, 231, 0.9); font-size: clamp(0.55rem, 0.9cqw, 0.8rem); letter-spacing: 0.04em; text-transform: none; font-weight: 400; }
+.susumu .shop-card button:hover { background: var(--text); color: var(--red); }
 
 .tabpanel[hidden] { display: none; }
 .tabpanel__title {
-  font-weight: 900;
+  font-weight: 600;
   font-size: clamp(1.6rem, 3vw, 2.4rem);
   letter-spacing: -0.04em;
   margin-bottom: 20px;
 }
-
-.susumu .tabpanel__title {
-  font-size: clamp(1.2rem, 2.4vw, 2rem);
-  margin: 0 0 12px;
-}
-.susumu .shop {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 14px;
-}
-.susumu .shop-card {
-  gap: 8px;
-  padding: 10px;
-  border-color: rgba(255, 255, 255, 0.8);
-  background: transparent;
-}
-.susumu .shop-card img {
-  aspect-ratio: 4 / 3;
-  object-fit: contain;
-  background: rgba(255, 255, 255, 0.42);
-  padding: 8px;
-}
-.susumu .shop-card p {
-  order: -1;
-  min-height: 1.6em;
-  font-size: 0.55rem;
-  color: #fff;
-}
-.susumu .shop-card button {
-  border: 1px solid rgba(255, 255, 255, 0.85);
-  background: transparent;
-  color: #fff;
-  padding: 6px 8px;
-  font-size: 0.55rem;
-  letter-spacing: 0.04em;
-}
-.susumu .shop-card button:hover { background: #fff; color: var(--red); }
 
 .shop {
   display: grid;
@@ -548,7 +429,7 @@ section {
   border-top: 1px solid var(--line);
 }
 .timeline__year {
-  font-weight: 900;
+  font-weight: 600;
   font-size: clamp(1.35rem, 2vw, 1.8rem);
   letter-spacing: -0.06em;
   line-height: 1;
@@ -566,7 +447,7 @@ section {
   padding: 40px var(--gutter);
 }
 .support-help h2 {
-  font-weight: 900;
+  font-weight: 600;
   font-size: clamp(1.2rem, 2.5vw, 2rem);
   letter-spacing: -0.045em;
   line-height: 1;
@@ -722,4 +603,40 @@ section {
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
   * { transition: none !important; }
+}
+
+/* ============ Fundos de ponta a ponta ============ */
+.susumu, .history, .universe, .library, .support-help {
+  width: 100%;
+  padding-inline: max(var(--gutter), calc((100% - var(--wrap)) / 2));
+}
+
+/* ============ Eyebrows (cores separadas por seção) ============ */
+.hero .eyebrow { color: var(--pink); }
+.products-band .eyebrow { color: #ffd3b6; }
+.commercial .eyebrow { color: #e3b9d8; }
+.history .eyebrow { color: #f0b5a8; }
+.universe .eyebrow { color: var(--text); }
+
+/* ============ Comercial: overlay ============ */
+.commercial__stage { border: 1px solid var(--red-bright); background: linear-gradient(90deg, rgba(172,18,23,.55), #000 70%); }
+.commercial__stage::after { content: ""; position: absolute; inset: 14px; border: 1px solid rgba(234, 187, 197, 0.45); pointer-events: none; }
+.commercial__overlay { display: block; padding: 0; }
+.commercial__tag--tl, .commercial__tag--bl { position: absolute; left: 5%; text-align: left; }
+.commercial__tag--tl { top: 7%; }
+.commercial__tag--bl { bottom: 7%; }
+.commercial__center { position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 14px; }
+
+/* ============ História: divisórias entre as linhas ============ */
+.timeline { column-gap: 22px; }
+.timeline li { padding-right: 0; }
+
+@media (max-width: 700px) {
+  .susumu__intro { grid-template-columns: 1fr; min-height: 0; }
+  .susumu__arch { width: 72%; margin: 34% auto 0; }
+  .susumu__copy { padding-top: 8%; font-size: 0.85rem; }
+  .susumu__title { font-size: 2.2rem; }
+  .sticker--five, .sticker--six { display: none; }
+  .susumu .tabpanel { margin-top: 12%; }
+  .susumu .shop { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; }
 }
